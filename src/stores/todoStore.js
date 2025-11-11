@@ -9,7 +9,7 @@ export const useTodoStore = defineStore('todoStore', {
         addTask(text) {
             if (text.trim().length == 0) return
             const now = new Date()
-            const timestamp = Date.parse(new Date())
+            const timestamp = Date.parse(now)
 
             this.tasks.push({
                 id: this.id,
